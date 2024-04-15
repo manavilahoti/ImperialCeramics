@@ -6,13 +6,14 @@ import Clients from "./components/pages/Clients";
 import Contact from "./components/pages/Contact";
 import Gallery from "./components/pages/Gallery";
 import Products from "./components/pages/Products";
-import Footer from "./components/Header";
+import Header from "./components/Header";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <Navbar />
+      <Header />
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/home" element={<Home />} />
@@ -21,7 +22,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/products" element={<Products />} />
       </Routes>
-      <Footer />
+      
     </div>
   );
 }

@@ -17,9 +17,8 @@ function classNames(...classes) {
 }
 
 export default function Header() {
-  const location = useLocation(); // Get the current location
+  const location = useLocation(); 
 
-  // Find the current page in the navigation array
   const currentPage = navigation.find(item => item.href === location.pathname);
 
   return (

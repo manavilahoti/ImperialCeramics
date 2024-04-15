@@ -1,7 +1,7 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useLocation } from 'react-router-dom'; // Import useLocation hook
+import { useLocation } from 'react-router-dom';
 
 const navigation = [
   { name: 'Home', href: '/Home' },
@@ -17,9 +17,9 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const location = useLocation(); // Get the current location
+  const location = useLocation(); 
 
-  // Find the current page in the navigation array
+  
   const currentPage = navigation.find(item => item.href === location.pathname);
 
   return (
@@ -49,8 +49,9 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           location.pathname === item.href ? 'bg-blue-800 text-white' : 'text-white hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
+                          'rounded-md px-3 py-2 text-base font-medium'
                         )}
+                        style={{ fontFamily: 'Arial, sans-serif', fontSize: '14px', fontWeight: '600' }}
                       >
                         {item.name}
                       </a>
@@ -72,6 +73,7 @@ export default function Navbar() {
                     location.pathname === item.href ? 'bg-blue-800 text-white' : 'text-white hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}
+                  style={{ fontFamily: 'Arial, sans-serif', fontSize: '14px', fontWeight: '600' }}
                 >
                   {item.name}
                 </Disclosure.Button>
