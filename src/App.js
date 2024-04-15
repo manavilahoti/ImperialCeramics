@@ -1,13 +1,13 @@
+import React from 'react';
 import Navbar from "./components/Navbar";
 import About from "./components/pages/About";
 import Home from "./components/pages/Home";
-import Clients from "./components/pages/Clients"
-import Contact from "./components/pages/Contact"
-import Gallery from "./components/pages/Gallery"
-import Products from "./components/pages/Products"
-//import "./App.css";
+import Clients from "./components/pages/Clients";
+import Contact from "./components/pages/Contact";
+import Gallery from "./components/pages/Gallery";
+import Products from "./components/pages/Products";
+import Footer from "./components/Header";
 import { Routes, Route } from "react-router-dom";
-
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/products" element={<Products />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
