@@ -7,6 +7,7 @@ import Contact from "./components/pages/Contact";
 import Gallery from "./components/pages/Gallery";
 import Products from "./components/pages/Products";
 import Header from "./components/Header";
+import Footer from "./components/Footer"; 
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/products" element={<Products />} />
       </Routes>
-      
+      <Footer /> 
     </div>
   );
 }
