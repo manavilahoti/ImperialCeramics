@@ -1,7 +1,7 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useLocation } from 'react-router-dom'; // Import useLocation hook
+import { useLocation } from 'react-router-dom';
 
 const navigation = [
   { name: 'Home', href: '/Home' },
@@ -17,7 +17,7 @@ function classNames(...classes) {
 }
 
 export default function Header() {
-  const location = useLocation(); 
+  const location = useLocation();
 
   const currentPage = navigation.find(item => item.href === location.pathname);
 
@@ -27,24 +27,20 @@ export default function Header() {
         <>
           <div className="mx-auto max-w-9xl px-1 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="flex flex-auto items-center justify-center sm:items-stretch sm:justify-center">
+                <h2 className="text-3xl font-bold leading-9 text-gray-900">
+                  {currentPage ? currentPage.name : 'Page Not Found'}
+                </h2>
+              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
-                  {open ? (
+                  {open && (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
-              </div>
-              <div className="flex flex-auto items-center justify-center sm:items-stretch sm:justify-center"> 
-                <div className="hidden sm:block">
-                  <h2 className="text-3xl font-bold leading-9 text-gray-900">
-                    {currentPage ? currentPage.name : 'Page Not Found'}
-                  </h2>
-                </div>
               </div>
             </div>
           </div>
