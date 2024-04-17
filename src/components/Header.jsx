@@ -1,6 +1,6 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 import { useLocation } from 'react-router-dom';
 
 const navigation = [
