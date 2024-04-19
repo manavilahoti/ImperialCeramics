@@ -22,11 +22,11 @@ import cl20 from '/Users/manavilahoti/Desktop/demo/src/images/clients/cl20.jpeg'
 
 export default function DefaultGallery() {
   const data = [
-    { imageLink: cl17 },
+    { imageLink: cl1 },
     { imageLink: cl2 },
-    { imageLink: cl15 },
-    { imageLink: cl20 },
-    { imageLink: cl10 },
+    { imageLink: cl3 },
+    { imageLink: cl4 },
+    { imageLink: cl5 },
     { imageLink: cl6 },
     { imageLink: cl7 },
     { imageLink: cl8 },
@@ -34,14 +34,14 @@ export default function DefaultGallery() {
     { imageLink: cl11 },
     { imageLink: cl13 },
     { imageLink: cl14 },
-    { imageLink: cl16 },
-    { imageLink: cl5 },
+    { imageLink: cl15 },
+    { imageLink: cl10 },
     { imageLink: cl12 },
-    { imageLink: cl3 },
-    { imageLink: cl1 },
+    { imageLink: cl16 },
+    { imageLink: cl17 },
     { imageLink: cl18 },
     { imageLink: cl19 },
-    { imageLink: cl4},
+    { imageLink: cl20},
   ];
 
   return (
@@ -51,13 +51,11 @@ export default function DefaultGallery() {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-7">
           {data.map(({ imageLink }, index) => (
             <div key={index} className="p-2">
-              <div className="aspect-square">
-                <img
-                  className="object-cover object-center rounded-lg"
-                  src={imageLink}
-                  alt={`gallery-photo-${index}`}
-                />
-              </div>
+              <img
+                className="w-full h-full rounded-lg"
+                src={imageLink}
+                alt={`gallery-photo-${index}`}
+              />
             </div>
           ))}
         </div>
