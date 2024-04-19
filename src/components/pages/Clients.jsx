@@ -52,7 +52,7 @@ export default function DefaultGallery() {
           {data.map(({ imageLink }, index) => (
             <div key={index} className="p-2">
               <img
-                className="w-full h-full rounded-lg"
+                className="w-full h-full "
                 src={imageLink}
                 alt={`gallery-photo-${index}`}
               />
