@@ -54,7 +54,7 @@ export default function DefaultGallery() {
               <img
                 className="w-full h-full "
                 src={imageLink}
-                alt={`gallery-photo-${index}`}
+                alt={`gallery-${index}`}
               />
             </div>
           ))}

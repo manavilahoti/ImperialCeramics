@@ -26,8 +26,7 @@ import i24 from '/Users/manavilahoti/Desktop/demo/src/images/img24.jpeg';
 import i25 from '/Users/manavilahoti/Desktop/demo/src/images/img25.jpeg';
 import i26 from '/Users/manavilahoti/Desktop/demo/src/images/img26.jpeg';
 import i27 from '/Users/manavilahoti/Desktop/demo/src/images/img27.jpeg';
-import i28 from '/Users/manavilahoti/Desktop/demo/src/images/img28.jpeg';
-import i29 from '/Users/manavilahoti/Desktop/demo/src/images/img29.jpeg';
+
 
 export default function DefaultGallery() {
   const data = [
@@ -70,7 +69,7 @@ export default function DefaultGallery() {
             <img
               className="w-full max-w-full rounded-lg object-cover object-center"
               src={imageLink}
-              alt={`gallery-photo-${index}`}
+              alt={`gallery-${index}`}
             />
           </div>
         ))}

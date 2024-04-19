@@ -19,8 +19,7 @@ function classNames(...classes) {
 export default function Navbar() {
   const location = useLocation(); 
 
-  
-  const currentPage = navigation.find(item => item.href === location.pathname);
+
 
   return (
     <Disclosure as="nav" className="bg-gray-900 sticky top-0 z-10">
