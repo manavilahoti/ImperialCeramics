@@ -146,7 +146,7 @@ const Modal = ({ isOpen, onClose, imageIndex, imageName }) => {
     </div>
   );
 };
-const App = () => {
+const Products = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [selectedImageName, setSelectedImageName] = useState('');
@@ -201,4 +201,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Products;
