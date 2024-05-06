@@ -12,7 +12,7 @@ const GENERAL_LINKS = [
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-900 text-white mt-8">
+        <footer className="bg-gray-900 text-white ">
             <div className="mx-auto max-w-7xl px-8 py-12 flex flex-col md:flex-row justify-between items-start">
 
                 {/* Quick Contact column */}
