@@ -10,6 +10,8 @@
     "@material-tailwind/react": "^2.1.9",
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
+    "@react-spring/core": "^9.7.3",
+    "@react-spring/web": "^9.7.3",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -21,6 +23,7 @@
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.2",
+    "react-spring": "^9.7.3",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
