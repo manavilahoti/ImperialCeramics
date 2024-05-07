@@ -1,53 +1,89 @@
 import React from 'react';
-
+import i13 from '/Users/manavilahoti/Desktop/demo/src/images/img13.jpeg';
+import i4 from '/Users/manavilahoti/Desktop/demo/src/images/img 4.jpeg';
+import i9 from '/Users/manavilahoti/Desktop/demo/src/images/img9.jpeg';
+import i22 from '/Users/manavilahoti/Desktop/demo/src/images/img22.jpeg';
+import i28 from '/Users/manavilahoti/Desktop/demo/src/images/img28.jpeg';
 const AboutUs = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-700 to-gray-600 text-white"> {/* Updated to lighter gradient */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="max-w-6xl mx-auto p-10">
-          <h1 className="text-5xl font-bold mb-12 text-center">About Us</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="bg-gray-500 p-6 rounded-lg text-justify"> {/* Lighter card background for content */}
-              <h2 className="text-3xl font-bold mb-6">Who We Are</h2>
-              <p className="text-xl mb-6">
-                Imperial Porcelain Private Limited is an accredited manufacturer, exporter, and supplier of a variety of insulators and bushings. Since our incorporation in 2004, we have focused on crafting high-quality products engineered at our own facility.
-              </p>
-              <p className="text-xl">
-                Headquartered in Rajasthan, India, we serve a global clientele and adhere strictly to ISO 9001:2015 standards, ensuring top-tier business practices.
-              </p>
+    <div className="bg-white text-gray-800">
+      <div className=" mx-auto py-12">
+        <h1 className="text-5xl font-bold mb-12 text-center">About Us</h1>
+        <div className="bg-white p-10 rounded-lg mb-12">
+          <div className="flex flex-col md:flex-row-reverse items-center gap-10">
+          <img src={i13} alt="Our Approach" className="w-full md:w-1/2 rounded-lg shadow-md" />
+
+            <div className="w-full md:w-1/2">
+              <h2 className="text-3xl font-bold mb-6">Background</h2>
+              <p className="text-xl text-justify	">
+                Imperial Porcelain Private Limited is an accredited manufacturer, exporter, and supplier of a variety of insulators and bushings. The range we offer encompasses disc insulators, guy strain insulators, insulator bushings, pin insulators, polymer insulators, post insulators, and shackle insulators. Our offerings are designed and precisely engineered at our own facility.</p>
             </div>
-            <div className="bg-gray-500 p-6 rounded-lg text-justify">
-              <h2 className="text-3xl font-bold mb-6">Our Vision & Mission</h2>
-              <p className="text-xl mb-6">
-                As a global leader, we are committed to continuous innovation in our products and systems, aiming to deliver exceptional customer values while promoting sustainable and responsible behavior.
-              </p>
-              <p className="text-xl">
-                We strive to enhance shareholder value and contribute positively to society through the optimum utilization of resources and adherence to the highest ethical standards.
+          </div>
+        </div>
+
+        {/* Vision Section */}
+        <div className="bg-gray-300 p-10 rounded-lg mb-12">
+          <div className="flex flex-col md:flex-row items-center gap-10">
+          <img src={i4} alt="Our Approach" className="w-full md:w-1/2 rounded-lg shadow-md" />
+            <div className="w-full md:w-1/2">
+              <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
+              <p className="text-xl text-justify">
+              A global leader that provides continually innovating products and systems to deliver exceptional customer values committed to promote integrated responsible behavior and value for social and environmental well-being.
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
-            <div className="bg-gray-500 p-6 rounded-lg text-justify">
-              <h2 className="text-3xl font-bold mb-6">Core Values</h2>
-              <ul className="list-disc pl-8 text-xl space-y-2">
-                <li>Passion</li>
-                <li>Commitment</li>
-                <li>Teamwork</li>
-                <li>Customer Satisfaction</li>
-                <li>Honesty</li>
-                <li>Transparency</li>
-                <li>Continuous Improvement</li>
-              </ul>
+        </div>
+
+        {/* Approach Section */}
+        <div className="bg-white p-10 rounded-lg mb-12">
+          <div className="flex flex-col md:flex-row-reverse items-center gap-10">
+          <img src={i9} alt="Our Approach" className="w-full md:w-1/2 rounded-lg shadow-md" />
+            <div className="w-full md:w-1/2">
+              <h2 className="text-3xl font-bold mb-6">Our Approach</h2>
+              <p className="text-xl text-justify">
+              For us, satisfied and loyal clientele is all a company needs to flourish in the market. Thus, we lay special emphasis on our production techniques, supply chain, quality parameters and above all the details that clients share with us. When you get associated with us, we assure streamlined trade operations.
+              </p>
             </div>
-            <div className="bg-gray-500 p-6 rounded-lg text-justify">
-              <h2 className="text-3xl font-bold mb-6">Why Choose Us?</h2>
-              <ul className="list-disc pl-8 text-xl space-y-2">
-                <li>Up-to-date product catalogs</li>
-                <li>Leading technology in product development</li>
-                <li>Guaranteed on-time shipments</li>
-                <li>Custom solutions for product development, packaging, and labeling</li>
-              </ul>
+          </div>
+        </div>
+
+        {/* Process Section */}
+        <div className="bg-gray-300 p-10 rounded-lg mb-12">
+          <div className="flex flex-col md:flex-row items-center gap-10">
+          <img src={i22} alt="Our Approach" className="w-full md:w-1/2 rounded-lg shadow-md" />
+            <div className="w-full md:w-1/2">
+              <h2 className="text-3xl font-bold mb-6">Our Process</h2>
+              <p className="text-xl text-justify">
+                As a global leader, we are committed to continuous innovation in our products and systems, aiming to deliver exceptional customer values while promoting sustainable and responsible behavior.
+              </p>
             </div>
+          </div>
+        </div>
+        <div className="bg-white p-10 rounded-lg mb-12">
+          <div className="flex flex-col md:flex-row-reverse items-center gap-10">
+          <img src={i28} alt="Our Approach" className="w-full md:w-1/2 rounded-lg shadow-md" />
+            <div className="w-full md:w-1/2">
+              <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+              <p className="text-xl text-justify">
+              To deliver superior value to our customers, shareholders, employees and society at large by optimum utilization of resources, adopting highest ethics, standards and sustainable environment friendly procedures and practic
+              </p>
+            </div>
+          </div>
+        </div>
+        
+
+        {/* Values Section */}
+        <div className="bg-white p-10 rounded-lg">
+          <h2 className="text-3xl font-bold mb-6 text-center">Core Values</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+            {/* Each value card */}
+            {["Passion", "Commitment", "Teamwork", "Customer Satisfaction", "Honesty", "Transparency", "Continuous Improvement"].map((value, index) => (
+              <div key={index} className="p-6 border border-gray-300 rounded-lg">
+                <h3 className="text-xl font-bold mb-4">{value}</h3>
+                <p className="text-lg">
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
