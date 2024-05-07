@@ -141,9 +141,9 @@ const Products = () => {
   };
 
   return (
-    <div className="p-4 md:p-6 bg-gray-100">
+    <div className="p-4 md:p-6 bg-gray-30">
       <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold text-gray-800 font-sans">Our Products</h2> {/* Changed to a more modern sans-serif font */}
+        <h2 className="text-2xl font-bold text-gray-800 font-sans">Our Products</h2> 
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         {images.map((image, index) => (
