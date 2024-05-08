@@ -1,57 +1,60 @@
-import React, { useState } from 'react';
-import i1 from '/Users/manavilahoti/Desktop/demo/src/images/img1.jpeg';
-import i2 from '/Users/manavilahoti/Desktop/demo/src/images/img 2.jpeg';
-import i3 from '/Users/manavilahoti/Desktop/demo/src/images/img3.jpeg';
-import i4 from '/Users/manavilahoti/Desktop/demo/src/images/img 4.jpeg';
-import i5 from '/Users/manavilahoti/Desktop/demo/src/images/img5.jpeg';
-import i6 from '/Users/manavilahoti/Desktop/demo/src/images/img6.jpeg';
-import i7 from '/Users/manavilahoti/Desktop/demo/src/images/img7.jpeg';
-import i8 from '/Users/manavilahoti/Desktop/demo/src/images/img8.jpeg';
-import i9 from '/Users/manavilahoti/Desktop/demo/src/images/img9.jpeg';
+import React from 'react';
+import i7 from '/Users/manavilahoti/Desktop/demo/src/images/ii.png'; // Ensure the path to the image is correct
 
-export function Home() {
-  const images = [i1, i2, i3, i4, i5, i6, i7, i8, i9];
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const previousImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-  };
-
+function Home() {
   return (
-    <div className=" ">
-      <div className=" ">
-        {/* Carousel */}
-        <div className="relative mb-12 bg-white shadow-xl overflow-hidden w-full max-h-120">
-          <button className="absolute left-0 top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-r-full bg-gray-800 text-white" onClick={previousImage}>
-            &lt;
-          </button>
-          <div className="flex">
-            {images.map((image, index) => {
-              const adjustedIndex = (currentImageIndex + index) % images.length;
-              return (
-                <div key={index} className="w-1/3 flex-shrink-0 mr-4" style={{ display: index >= 0 && index < 3 ? 'block' : 'none', marginTop: '20px' }}>
-                  <img src={images[adjustedIndex]} alt={`Image ${adjustedIndex + 1}`} className="w-full h-full" style={{ marginTop: '20px' }} />
-                </div>
-              );
-            })}
-          </div>
-          <button className="absolute right-0 top-1/2 transform -translate-y-1/2 px-4 py-2 rounded-l-full bg-gray-800 text-white" onClick={nextImage}>
-            &gt;
-          </button>
-        </div>
-
-        {/* Welcome Text */}
-        <div className="text-center p-8 bg-gray-200 text-black rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold mb-3">WELCOME TO OUR WEBSITE</h2>
-          <p className="text-lg leading-relaxed text-justify">
-            Imperial Porcelain Private Limited is an accredited manufacturer, exporter, and supplier of a variety of insulators and bushings of both porcelain and polymer type. The range we offer encompasses disc insulators, guy strain insulators, insulator bushings, pin insulators, post insulators, and shackle insulators. Our offerings are designed and precisely engineered at our own facility. For us, satisfied and loyal clientele is all a company needs to flourish in the market. Thus, we lay special emphasis on our production techniques, supply chain, quality parameters, and above all, the details that clients share with us. When you get associated with us, we assure streamlined trade operations.
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section with Enhanced Styling */}
+      <div className="relative w-full flex justify-center bg-indigo-900 text-white">
+        <img src={i7} alt="Background" className="w-full object-cover opacity-60 h-96" />
+        <div className="absolute top-0 left-0 w-full h-96 flex flex-col items-center justify-center space-y-4">
+          <h1 className="text-4xl font-bold">IMPERIAL CERAMICS PVT. LTD.</h1>
+          <p className="px-4 text-center">
+            Leading the industry in high-quality ceramic insulators and bushings with a commitment to sustainable manufacturing practices.
           </p>
         </div>
       </div>
+
+      {/* Services Section with More Content and Improved Layout */}
+      <div className="container mx-auto py-10 px-6">
+        <h2 className="text-center text-3xl font-bold text-gray-800 mb-10">Why Choose Us</h2>
+        <div className="grid md:grid-cols-4 gap-6 text-gray-800">
+          {[
+            { title: "Innovative Design", description: "Our products feature state-of-the-art designs that enhance performance and durability in all operating conditions." },
+            { title: "Sustainability Focus", description: "We are dedicated to reducing environmental impact through innovative manufacturing processes and sustainable materials." },
+            { title: "Quality Assurance", description: "Every product undergoes rigorous testing to exceed international quality standards." },
+            { title: "Custom Solutions", description: "We specialize in custom designs to meet unique operational requirements, providing flexibility and precision." }
+          ].map((service, index) => (
+            <div key={index} className="p-5 bg-white rounded-lg shadow-md">
+              <h3 className="font-bold text-lg">{service.title}</h3>
+              <p className="mt-2">{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Testimonials and Client Feedback */}
+      <div className="bg-blue-100 py-10 px-6">
+        <h2 className="text-center text-3xl font-bold text-gray-800 mb-6">What Our Clients Say</h2>
+        <div className="flex flex-wrap justify-center items-center text-gray-800">
+          <div className="m-4 p-5 bg-white rounded-lg shadow-lg">
+            <blockquote>"Imperial Ceramics has consistently delivered high-quality products that our projects rely on. Their attention to detail and customer service is unmatched."</blockquote>
+            <p className="mt-4 font-bold">- John Doe, Engineering Manager</p>
+          </div>
+          <div className="m-4 p-5 bg-white rounded-lg shadow-lg">
+            <blockquote>"We value our partnership with Imperial Ceramics due to their commitment to sustainability and innovation. They are true leaders in the industry!"</blockquote>
+            <p className="mt-4 font-bold">- Jane Smith, Procurement Officer</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Additional Info and CTA */}
+      <div className="container mx-auto py-10 px-6 text-center">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">Ready to Transform Your Operations?</h2>
+        <p className="mb-6">Contact us today to learn more about our products and how we can assist in achieving your project goals with our top-tier ceramic solutions.</p>
+        <button className="bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-2 px-4 rounded">Get in Touch</button>
+      </div>
+
     </div>
   );
 }
