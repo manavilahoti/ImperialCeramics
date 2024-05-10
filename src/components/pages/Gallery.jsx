@@ -26,7 +26,7 @@ import i24 from '/Users/manavilahoti/Desktop/demo/src/images/img24.jpeg';
 import i25 from '/Users/manavilahoti/Desktop/demo/src/images/img25.jpeg';
 import i26 from '/Users/manavilahoti/Desktop/demo/src/images/img26.jpeg';
 import i27 from '/Users/manavilahoti/Desktop/demo/src/images/img27.jpeg';
-
+import i00 from '/Users/manavilahoti/Desktop/demo/src/images/img9 copy.jpeg';
 
 export default function DefaultGallery() {
   const data = [
@@ -61,9 +61,16 @@ export default function DefaultGallery() {
   ];
 
   return (
-    <div className="p-4">
+    <div className="">
+      <div className="relative w-full flex justify-center bg-indigo-900 text-white">
+          <img src={i00} alt="Background" className="w-full object-cover opacity-40 h-96" />
+          <div className="absolute top-0 left-0 w-full h-96 flex flex-col items-center justify-center space-y-4">
+            <h1 className="text-4xl font-bold">GALLERY</h1>
+          </div>
+        </div>
+      <div className="text-center mb-8"></div>
       <div className="mb-8"></div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+      <div className="p-2 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
         {data.map(({ imageLink }, index) => (
           <div key={index} className="p-2">
             <img
