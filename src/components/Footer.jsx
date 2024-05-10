@@ -49,7 +49,7 @@ export default function Footer() {
                         <input type="tel" placeholder="Phone / Mobile" className="form-input" />
                         <textarea placeholder="Leave a Message for us" className="form-input" rows="3"></textarea>
                     </div>
-                    <button type="submit" className="bg-red-600 text-white py-2 px-6 rounded-md hover:bg-red-700 transition-colors duration-300">Send Message</button>
+                    <button type="submit" className="bg-blue-800 hover:bg-gray-700 text-white py-2 px-6 rounded-md transition-colors duration-300">Send Message</button>
                 </form>
 
                 {/* General Links */}

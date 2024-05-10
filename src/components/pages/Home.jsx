@@ -35,7 +35,7 @@ function Home() {
 
       {/* Testimonials and Client Feedback */}
       <div className="bg-blue-100 py-10 px-6">
-        <h2 className="text-center text-3xl font-bold text-gray-800 mb-6">What Our Clients Say</h2>
+        <h2 className="text-center text-3xl font-bold text-gray-800 mb-6">Welcome to our Website</h2>
         <div className="flex flex-wrap justify-center items-center text-gray-800">
           <div className="m-4 p-5 bg-white rounded-lg shadow-lg">
             <blockquote>"Imperial Ceramics has consistently delivered high-quality products that our projects rely on. Their attention to detail and customer service is unmatched."</blockquote>
@@ -52,7 +52,7 @@ function Home() {
       <div className="container mx-auto py-10 px-6 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Ready to Transform Your Operations?</h2>
         <p className="mb-6">Contact us today to learn more about our products and how we can assist in achieving your project goals with our top-tier ceramic solutions.</p>
-        <button className="bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-2 px-4 rounded">Get in Touch</button>
+        <button className="bg-blue-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Get in Touch</button>
       </div>
 
     </div>
