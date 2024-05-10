@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import i7 from '/Users/manavilahoti/Desktop/demo/src/images/ii.png'; 
 
 function Home() {
@@ -15,7 +16,7 @@ function Home() {
         </div>
       </div>
 
-      {/* Services Section with More Content and Improved Layout */}
+      
       <div className="container mx-auto py-10 px-6">
         <h2 className="text-center text-3xl font-bold text-gray-800 mb-10">Why Choose Us</h2>
         <div className="grid md:grid-cols-4 gap-6 text-gray-800">
@@ -48,11 +49,13 @@ function Home() {
         </div>
       </div>
 
-      {/* Additional Info and CTA */}
+     
       <div className="container mx-auto py-10 px-6 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Ready to Transform Your Operations?</h2>
         <p className="mb-6">Contact us today to learn more about our products and how we can assist in achieving your project goals with our top-tier ceramic solutions.</p>
-        <button className="bg-blue-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Get in Touch</button>
+        <Link to="/contact"> 
+          <button className="bg-blue-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">Get in Touch</button>
+        </Link>
       </div>
 
     </div>
