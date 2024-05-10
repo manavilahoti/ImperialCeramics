@@ -1,10 +1,10 @@
 import React from 'react';
-import i7 from '/Users/manavilahoti/Desktop/demo/src/images/ii.png'; // Ensure the path to the image is correct
+import i7 from '/Users/manavilahoti/Desktop/demo/src/images/ii.png'; 
 
 function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section with Enhanced Styling */}
+      
       <div className="relative w-full flex justify-center bg-indigo-900 text-white">
         <img src={i7} alt="Background" className="w-full object-cover opacity-60 h-96" />
         <div className="absolute top-0 left-0 w-full h-96 flex flex-col items-center justify-center space-y-4">
@@ -35,7 +35,7 @@ function Home() {
 
       {/* Testimonials and Client Feedback */}
       <div className="bg-blue-100 py-10 px-6">
-        <h2 className="text-center text-3xl font-bold text-gray-800 mb-6">Welcome to our Website</h2>
+        <h2 className="text-center text-3xl font-bold text-gray-800 mb-6">Client Testimonials</h2>
         <div className="flex flex-wrap justify-center items-center text-gray-800">
           <div className="m-4 p-5 bg-white rounded-lg shadow-lg">
             <blockquote>"Imperial Ceramics has consistently delivered high-quality products that our projects rely on. Their attention to detail and customer service is unmatched."</blockquote>
