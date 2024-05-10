@@ -1,5 +1,4 @@
 import React from 'react';
-import i13 from '/Users/manavilahoti/Desktop/demo/src/images/img13.jpeg';
 import i4 from '/Users/manavilahoti/Desktop/demo/src/images/img 4.jpeg';
 import i9 from '/Users/manavilahoti/Desktop/demo/src/images/img9.jpeg';
 import i22 from '/Users/manavilahoti/Desktop/demo/src/images/img22.jpeg';

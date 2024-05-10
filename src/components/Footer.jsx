@@ -15,7 +15,7 @@ export default function Footer() {
         <footer className="bg-gray-900 text-white ">
             <div className="mx-auto max-w-7xl px-8 py-12 flex flex-col md:flex-row justify-between items-start">
 
-                {/* Quick Contact column */}
+                
                 <div className="flex flex-col space-y-4">
                     <Typography variant="base" color="teal" className="font-semibold uppercase text-lg">
                         Quick Contact
