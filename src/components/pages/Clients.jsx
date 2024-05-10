@@ -19,7 +19,7 @@ import cl17 from '/Users/manavilahoti/Desktop/demo/src/images/clients/cl17.png';
 import cl18 from '/Users/manavilahoti/Desktop/demo/src/images/clients/cl18.jpeg';
 import cl19 from '/Users/manavilahoti/Desktop/demo/src/images/clients/cl19.jpg';
 import cl20 from '/Users/manavilahoti/Desktop/demo/src/images/clients/cl20.jpeg';
-
+import i7 from '/Users/manavilahoti/Desktop/demo/src/images/img5 copy.jpeg';
 export default function DefaultGallery() {
   const data = [
     { imageLink: cl1 },
@@ -45,10 +45,17 @@ export default function DefaultGallery() {
   ];
 
   return (
-    <div className="p-4">
+    <div className="">
+      <div className="relative w-full flex justify-center bg-indigo-900 text-white">
+          <img src={i7} alt="Background" className="w-full object-cover opacity-70 h-96" />
+          <div className="absolute top-0 left-0 w-full h-96 flex flex-col items-center justify-center space-y-4">
+            <h1 className="text-4xl font-bold">CLIENTS</h1>
+          </div>
+        </div>
+      <div className="text-center mb-8"></div>
       <div className="mb-8"></div>
-      <div className="container mx-auto px-20">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-7">
+      <div className="container mx-auto px-10 pt-4">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-7">
           {data.map(({ imageLink }, index) => (
             <div key={index} className="p-2">
               <img
