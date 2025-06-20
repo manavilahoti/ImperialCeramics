@@ -1,6 +1,3 @@
-import React from 'react';
-import { Typography } from "@material-tailwind/react";
-
 const GENERAL_LINKS = [
   { title: "Home", link: "/Home" },
   { title: "About Us", link: "/about" },
@@ -19,7 +16,7 @@ export default function Footer() {
         <div className="flex-1 space-y-4">
           <h3 className="text-lg font-semibold uppercase text-teal-400">Quick Contact</h3>
           <p className="font-semibold">Mr. Anand Lahoti</p>
-          <p>E 247248, 248A, IGC Khara, Khara, Bikaner, Rajasthan - 334601, India</p>
+          <p>F-368-370, IGC Khara, Khara, Bikaner, Rajasthan - 334601, India</p>
           <p>Phone: +919001091703, +91 9829797674</p>
           <p>Email: info@imperialceramics.in</p>
         </div>

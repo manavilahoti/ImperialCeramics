@@ -7,14 +7,22 @@ function Home() {
     <div className="min-h-screen bg-gray-50">
       
       <div className="relative w-full flex justify-center bg-indigo-900 text-white">
-        <img src={i7} alt="Background" className="w-full object-cover opacity-60 h-96" />
-        <div className="absolute top-0 left-0 w-full h-96 flex flex-col items-center justify-center space-y-4">
-          <h1 className="text-4xl font-bold">IMPERIAL</h1>
-          <p className="px-4 text-center">
-            Leading the industry in high-quality ceramic insulators and bushings with a commitment to sustainable manufacturing practices.
-          </p>
-        </div>
-      </div>
+  <img src={i7} alt="Background" className="w-full object-cover opacity-60 h-96" />
+  <div className="absolute top-0 left-0 w-full h-96 flex flex-col items-center justify-center space-y-6">
+<h1
+  className="text-6xl font-extrabold drop-shadow-lg tracking-wide"
+  style={{ color: '#BFA100' }}
+>
+  IMPERIAL
+</h1>
+
+
+    <p className="px-6 text-center text-xl font-medium max-w-3xl">
+      Precision-Crafted Ceramic Insulators for a Sustainable Future
+    </p>
+  </div>
+</div>
+
 
       
       <div className="container mx-auto py-10 px-6">

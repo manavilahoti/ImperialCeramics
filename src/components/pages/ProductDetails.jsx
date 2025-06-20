@@ -48,7 +48,7 @@ const images = [
     name: 'Polymer Insulator',
     src: p4,
     specifications: [
-      { name: 'Material', value: 'Porcelain' },
+      { name: 'Material', value: 'Polymer' },
       { name: 'Shape', value: 'Disc' },
       { name: 'Application', value: 'Control Panels' },
       { name: 'Tensile Strength', value: '0-25Mpa' },
