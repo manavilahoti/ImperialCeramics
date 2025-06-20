@@ -1,79 +1,58 @@
 import React from 'react';
 import { Typography } from "@material-tailwind/react";
-import './footer.css';
+
 const GENERAL_LINKS = [
-    { title: "Home", link: "/Home" },
-    { title: "About Us", link: "/about" },
-    { title: "Products", link: "/products" },
-    { title: "Our Gallery", link: "/gallery" },
-    { title: "Our Clients", link: "/clients" },
-    { title: "Contact Us", link: "/contact" },
+  { title: "Home", link: "/Home" },
+  { title: "About Us", link: "/about" },
+  { title: "Products", link: "/products" },
+  { title: "Our Gallery", link: "/gallery" },
+  { title: "Our Clients", link: "/clients" },
+  { title: "Contact Us", link: "/contact" },
 ];
 
 export default function Footer() {
-    return (
-        <footer className="bg-gray-900 text-white ">
-            <div className="mx-auto max-w-7xl px-8 py-12 flex flex-col md:flex-row justify-between items-start">
+  return (
+    <footer className="bg-gray-900 text-white py-10 px-4">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10">
 
-                
-                <div className="flex flex-col space-y-4">
-                    <Typography variant="base" color="teal" className="font-semibold uppercase text-lg">
-                        Quick Contact
-                    </Typography>
-                    <div className="flex flex-col items-start ml-1">
-                        <Typography variant="base" className="text-base font-semibold">Mr. Anand Lahoti</Typography>
-                        <div className="flex flex-col space-y-1">
-                            <Typography variant="base" className="text">E 247248, 248A, IGC Khara,</Typography>
-                            <Typography variant="base" className="text-sm">Khara, Bikaner, Rajasthan - 334601,</Typography>
-                            <Typography variant="base" className="text-sm">India</Typography>
-                        </div>
-                        <Typography variant="base" className="text-sm mt-1">9001091703, 9829797674</Typography>
-                    </div>
-                </div>
+        {/* Quick Contact */}
+        <div className="flex-1 space-y-4">
+          <h3 className="text-lg font-semibold uppercase text-teal-400">Quick Contact</h3>
+          <p className="font-semibold">Mr. Anand Lahoti</p>
+          <p>E 247248, 248A, IGC Khara, Khara, Bikaner, Rajasthan - 334601, India</p>
+          <p>Phone: +919001091703, +91 9829797674</p>
+          <p>Email: info@imperialceramics.in</p>
+        </div>
 
-                {/* Form */}
-                <form className="flex flex-col space-y-4 md:w-1/2">
-                    <Typography variant="base" color="teal" className="font-semibold uppercase text-lg text-center">
-                        Quick Enquiry
-                    </Typography>
-                    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                        <input type="text" placeholder="Product / Service Looking for" className="form-input" />
-                        <input type="text" placeholder="Your Name" className="form-input" />
-                    </div>
-                    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                        <input type="email" placeholder="Email" className="form-input" />
-                        <input type="text" placeholder="Country" className="form-input" />
-                        
-                    </div>
-                    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                        <input type="tel" placeholder="Phone / Mobile" className="form-input" />
-                        <textarea placeholder="Leave a Message for us" className="form-input" rows="3"></textarea>
-                    </div>
-                    <button type="submit" className="bg-blue-800 hover:bg-gray-700 text-white py-2 px-6 rounded-md transition-colors duration-300">Send Message</button>
-                </form>
+        {/* Quick Enquiry */}
+        <form className="flex-1 space-y-4 bg-white p-6 rounded-lg shadow-md text-black w-full md:max-w-md">
+          <h3 className="text-lg font-semibold uppercase text-teal-600 text-center">Quick Enquiry</h3>
 
-                {/* General Links */}
-                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 md:items-center">
-                    <div>
-                        <Typography
-                            variant="base"
-                            color="teal"
-                            className="font-semibold uppercase text-lg"
-                        >
-                            General Links
-                        </Typography>
-                        <ul className="space-y-1">
-                            {GENERAL_LINKS.map((item, index) => (
-                                <li key={index}>
-                                    <Typography as="a" href={item.link} className="hover:underline">
-                                        {item.title}
-                                    </Typography>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    );
+          <input type="text" placeholder="Product / Service Looking for" className="w-full border rounded-md px-4 py-2" />
+          <input type="text" placeholder="Your Name" className="w-full border rounded-md px-4 py-2" />
+          <input type="email" placeholder="Email" className="w-full border rounded-md px-4 py-2" />
+          <input type="text" placeholder="Country" className="w-full border rounded-md px-4 py-2" />
+          <input type="tel" placeholder="Phone / Mobile" className="w-full border rounded-md px-4 py-2" />
+          <textarea placeholder="Leave a Message for us" rows="3" className="w-full border rounded-md px-4 py-2"></textarea>
+
+          <button type="submit" className="bg-blue-800 text-white w-full py-2 rounded-md hover:bg-blue-900">
+            Send Message
+          </button>
+        </form>
+
+        {/* General Links */}
+        <div className="flex-1 space-y-4">
+          <h3 className="text-lg font-semibold uppercase text-teal-400">General Links</h3>
+          <ul className="space-y-2">
+            {GENERAL_LINKS.map((item, index) => (
+              <li key={index}>
+                <a href={item.link} className="hover:underline">{item.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+  );
 }

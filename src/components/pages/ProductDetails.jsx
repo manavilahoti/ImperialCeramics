@@ -6,7 +6,8 @@ import p4 from '../../images/products/p4.jpeg';
 import p5 from '../../images/products/p5.jpeg';
 import p6 from '../../images/products/p6.jpeg';
 import p7 from '../../images/products/p7.jpeg';
-import i7 from '/Users/manavilahoti/Desktop/demo/src/images/img6 copy.jpeg';
+import i7 from '../../images/img6_copy.jpeg';
+
 const images = [
   {
     name: 'Disc Insulator',
@@ -109,33 +110,61 @@ const ProductCard = ({ product, onClick }) => (
 );
 
 const Modal = ({ isOpen, onClose, product }) => (
-  <div className={`fixed inset-0 flex items-center justify-center z-50 ${isOpen ? '' : 'hidden'}`} onClick={onClose}>
+  <div
+    className={`fixed inset-0 flex items-center justify-center z-50 ${isOpen ? '' : 'hidden'}`}
+    onClick={onClose}
+  >
     <div className="fixed inset-0 bg-black opacity-50"></div>
-    <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg z-50" onClick={(e) => e.stopPropagation()} style={{ textAlign: 'center' }}>
-      <button className="absolute top-2 right-2 text-gray-500 hover:text-gray-700" onClick={onClose}>
+    <div
+      className="bg-white w-full max-w-screen-sm md:max-w-screen-md p-4 md:p-6 rounded-lg shadow-lg z-50 overflow-y-auto max-h-[90vh]"
+      onClick={(e) => e.stopPropagation()}
+      style={{ textAlign: 'center' }}
+    >
+      <button
+        className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+        onClick={onClose}
+      >
         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M6 18L18 6M6 6l12 12"
+          />
         </svg>
       </button>
+
       <h2 className="text-lg md:text-xl font-semibold">{product.name}</h2>
-      <div>
-        <img src={product.src} alt={product.name} className="max-w-full h-auto mx-auto rounded-lg object-cover" />
+
+      <div className="my-4">
+        <img
+          src={product.src}
+          alt={product.name}
+          className="w-full h-auto max-h-72 object-contain mx-auto rounded-lg"
+        />
       </div>
-      <div className="mt-4">
-        <table className="w-full text-sm text-left text-gray-500 mx-auto">
-          {product.specifications.map((spec, index) => (
-            <tr key={index} className="bg-white border-b">
-              <th scope="row" className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
-                {spec.name}
-              </th>
-              <td className="px-2 py-4">{spec.value}</td>
-            </tr>
-          ))}
+
+      <div className="mt-4 overflow-x-auto">
+        <table className="w-full text-sm text-left text-gray-500 mx-auto min-w-[300px]">
+          <tbody>
+            {product.specifications.map((spec, index) => (
+              <tr key={index} className="bg-white border-b">
+                <th
+                  scope="row"
+                  className="px-2 py-2 font-medium text-gray-900 whitespace-nowrap"
+                >
+                  {spec.name}
+                </th>
+                <td className="px-2 py-2">{spec.value}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
     </div>
   </div>
 );
+
 const Products = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);

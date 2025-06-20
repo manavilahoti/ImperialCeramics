@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; 
-import i7 from '/Users/manavilahoti/Desktop/demo/src/images/ii.png'; 
+import { Link } from 'react-router-dom';
+import i7 from '../../images/ii.png';
 
 function Home() {
   return (
@@ -9,7 +9,7 @@ function Home() {
       <div className="relative w-full flex justify-center bg-indigo-900 text-white">
         <img src={i7} alt="Background" className="w-full object-cover opacity-60 h-96" />
         <div className="absolute top-0 left-0 w-full h-96 flex flex-col items-center justify-center space-y-4">
-          <h1 className="text-4xl font-bold">IMPERIAL CERAMICS PVT. LTD.</h1>
+          <h1 className="text-4xl font-bold">IMPERIAL</h1>
           <p className="px-4 text-center">
             Leading the industry in high-quality ceramic insulators and bushings with a commitment to sustainable manufacturing practices.
           </p>
