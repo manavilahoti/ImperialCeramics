@@ -54,8 +54,8 @@ const ContactSection = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-1">Our Address</h3>
-                    <p className="text-gray-600 dark:text-slate-400">E 247248, 248A, IGC Khara,</p>
-                    <p className="text-gray-600 dark:text-slate-400">Khara, Bikaner, Rajasthan - 334601,</p>
+                    <p className="text-gray-600 dark:text-slate-400">F-368-370, IGC Khara,</p>
+                    <p className="text-gray-600 dark:text-slate-400">Bikaner, Rajasthan - 334601,</p>
                     <p className="text-gray-600 dark:text-slate-400">India</p>
                   </div>
                 </li>
